@@ -1,0 +1,2476 @@
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CXX compiler: /usr/bin/c++
+-- CXX flags: 
+-- CXX debug flags: -g -g3 -ggdb -O0 -fno-omit-frame-pointer
+-- Build type: Debug
+-- Source dir: /home/mak/Projects/AST_Tree_Analyser
+-- Binary dir: /home/mak/Projects/AST_Tree_Analyser/build
+-- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.14.0")  
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: program_options 
+-- Found range-v3: /usr/include
+-- Configuring src directory
+-- Current source dir: /home/mak/Projects/AST_Tree_Analyser/src
+-- Current binary dir: /home/mak/Projects/AST_Tree_Analyser/build/src
+-- Found function.cpp
+-- Found file.cpp
+-- Found metric.cpp
+-- Found metric_accumulator.cpp
+-- Found cmd_options.cpp
+-- Added library: function
+--   Sources: function.cpp
+-- Added library: file
+--   Sources: file.cpp
+-- Added library: metric
+--   Sources: metric.cpp;metric_impl/code_lines_count.cpp;metric_impl/cyclomatic_complexity.cpp;metric_impl/parameters_count.cpp
+-- Added library: metric_accumulator
+--   Sources: metric_accumulator.cpp;metric_accumulator_impl/average_accumulator.cpp;metric_accumulator_impl/sum_average_accumulator.cpp
+-- Added library: cmd_options
+--   Sources: cmd_options.cpp
+-- Targets in src: unit_tests;function;file;metric;metric_accumulator;cmd_options
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/mak/Projects/AST_Tree_Analyser/build
+/usr/bin/cmake -S/home/mak/Projects/AST_Tree_Analyser -B/home/mak/Projects/AST_Tree_Analyser/build --check-build-system CMakeFiles/Makefile.cmake 0
+make  -f CMakeFiles/Makefile2 analyser
+make[1]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+/usr/bin/cmake -S/home/mak/Projects/AST_Tree_Analyser -B/home/mak/Projects/AST_Tree_Analyser/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/mak/Projects/AST_Tree_Analyser/build/CMakeFiles 17
+make  -f CMakeFiles/Makefile2 CMakeFiles/analyser.dir/all
+make[2]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+make  -f src/CMakeFiles/cmd_options.dir/build.make src/CMakeFiles/cmd_options.dir/depend
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+cd /home/mak/Projects/AST_Tree_Analyser/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mak/Projects/AST_Tree_Analyser /home/mak/Projects/AST_Tree_Analyser/src /home/mak/Projects/AST_Tree_Analyser/build /home/mak/Projects/AST_Tree_Analyser/build/src /home/mak/Projects/AST_Tree_Analyser/build/src/CMakeFiles/cmd_options.dir/DependInfo.cmake "--color="
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+make  -f src/CMakeFiles/cmd_options.dir/build.make src/CMakeFiles/cmd_options.dir/build
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[  5%] Building CXX object src/CMakeFiles/cmd_options.dir/cmd_options.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++ -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/cmd_options.dir/cmd_options.cpp.o -MF CMakeFiles/cmd_options.dir/cmd_options.cpp.o.d -o CMakeFiles/cmd_options.dir/cmd_options.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/cmd_options.cpp
+[ 11%] Linking CXX static library libcmd_options.a
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -P CMakeFiles/cmd_options.dir/cmake_clean_target.cmake
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/cmd_options.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmd_options.a CMakeFiles/cmd_options.dir/cmd_options.cpp.o
+/usr/bin/ranlib libcmd_options.a
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 11%] Built target cmd_options
+make  -f src/CMakeFiles/function.dir/build.make src/CMakeFiles/function.dir/depend
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+cd /home/mak/Projects/AST_Tree_Analyser/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mak/Projects/AST_Tree_Analyser /home/mak/Projects/AST_Tree_Analyser/src /home/mak/Projects/AST_Tree_Analyser/build /home/mak/Projects/AST_Tree_Analyser/build/src /home/mak/Projects/AST_Tree_Analyser/build/src/CMakeFiles/function.dir/DependInfo.cmake "--color="
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+make  -f src/CMakeFiles/function.dir/build.make src/CMakeFiles/function.dir/build
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 17%] Building CXX object src/CMakeFiles/function.dir/function.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/function.dir/function.cpp.o -MF CMakeFiles/function.dir/function.cpp.o.d -o CMakeFiles/function.dir/function.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/function.cpp
+[ 23%] Linking CXX static library libfunction.a
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -P CMakeFiles/function.dir/cmake_clean_target.cmake
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/function.dir/link.txt --verbose=1
+/usr/bin/ar qc libfunction.a CMakeFiles/function.dir/function.cpp.o
+/usr/bin/ranlib libfunction.a
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 23%] Built target function
+make  -f src/CMakeFiles/file.dir/build.make src/CMakeFiles/file.dir/depend
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+cd /home/mak/Projects/AST_Tree_Analyser/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mak/Projects/AST_Tree_Analyser /home/mak/Projects/AST_Tree_Analyser/src /home/mak/Projects/AST_Tree_Analyser/build /home/mak/Projects/AST_Tree_Analyser/build/src /home/mak/Projects/AST_Tree_Analyser/build/src/CMakeFiles/file.dir/DependInfo.cmake "--color="
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+make  -f src/CMakeFiles/file.dir/build.make src/CMakeFiles/file.dir/build
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 29%] Building CXX object src/CMakeFiles/file.dir/file.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/file.dir/file.cpp.o -MF CMakeFiles/file.dir/file.cpp.o.d -o CMakeFiles/file.dir/file.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/file.cpp
+[ 35%] Linking CXX static library libfile.a
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -P CMakeFiles/file.dir/cmake_clean_target.cmake
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/file.dir/link.txt --verbose=1
+/usr/bin/ar qc libfile.a CMakeFiles/file.dir/file.cpp.o
+/usr/bin/ranlib libfile.a
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 35%] Built target file
+make  -f src/CMakeFiles/metric.dir/build.make src/CMakeFiles/metric.dir/depend
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+cd /home/mak/Projects/AST_Tree_Analyser/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mak/Projects/AST_Tree_Analyser /home/mak/Projects/AST_Tree_Analyser/src /home/mak/Projects/AST_Tree_Analyser/build /home/mak/Projects/AST_Tree_Analyser/build/src /home/mak/Projects/AST_Tree_Analyser/build/src/CMakeFiles/metric.dir/DependInfo.cmake "--color="
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+make  -f src/CMakeFiles/metric.dir/build.make src/CMakeFiles/metric.dir/build
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 41%] Building CXX object src/CMakeFiles/metric.dir/metric.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/metric.dir/metric.cpp.o -MF CMakeFiles/metric.dir/metric.cpp.o.d -o CMakeFiles/metric.dir/metric.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/metric.cpp
+[ 47%] Building CXX object src/CMakeFiles/metric.dir/metric_impl/code_lines_count.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/metric.dir/metric_impl/code_lines_count.cpp.o -MF CMakeFiles/metric.dir/metric_impl/code_lines_count.cpp.o.d -o CMakeFiles/metric.dir/metric_impl/code_lines_count.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/metric_impl/code_lines_count.cpp
+[ 52%] Building CXX object src/CMakeFiles/metric.dir/metric_impl/cyclomatic_complexity.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/metric.dir/metric_impl/cyclomatic_complexity.cpp.o -MF CMakeFiles/metric.dir/metric_impl/cyclomatic_complexity.cpp.o.d -o CMakeFiles/metric.dir/metric_impl/cyclomatic_complexity.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/metric_impl/cyclomatic_complexity.cpp
+[ 58%] Building CXX object src/CMakeFiles/metric.dir/metric_impl/parameters_count.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/metric.dir/metric_impl/parameters_count.cpp.o -MF CMakeFiles/metric.dir/metric_impl/parameters_count.cpp.o.d -o CMakeFiles/metric.dir/metric_impl/parameters_count.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/metric_impl/parameters_count.cpp
+[ 64%] Linking CXX static library libmetric.a
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -P CMakeFiles/metric.dir/cmake_clean_target.cmake
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/metric.dir/link.txt --verbose=1
+/usr/bin/ar qc libmetric.a CMakeFiles/metric.dir/metric.cpp.o CMakeFiles/metric.dir/metric_impl/code_lines_count.cpp.o CMakeFiles/metric.dir/metric_impl/cyclomatic_complexity.cpp.o CMakeFiles/metric.dir/metric_impl/parameters_count.cpp.o
+/usr/bin/ranlib libmetric.a
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 64%] Built target metric
+make  -f src/CMakeFiles/metric_accumulator.dir/build.make src/CMakeFiles/metric_accumulator.dir/depend
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+cd /home/mak/Projects/AST_Tree_Analyser/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mak/Projects/AST_Tree_Analyser /home/mak/Projects/AST_Tree_Analyser/src /home/mak/Projects/AST_Tree_Analyser/build /home/mak/Projects/AST_Tree_Analyser/build/src /home/mak/Projects/AST_Tree_Analyser/build/src/CMakeFiles/metric_accumulator.dir/DependInfo.cmake "--color="
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+make  -f src/CMakeFiles/metric_accumulator.dir/build.make src/CMakeFiles/metric_accumulator.dir/build
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 70%] Building CXX object src/CMakeFiles/metric_accumulator.dir/metric_accumulator.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/metric_accumulator.dir/metric_accumulator.cpp.o -MF CMakeFiles/metric_accumulator.dir/metric_accumulator.cpp.o.d -o CMakeFiles/metric_accumulator.dir/metric_accumulator.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/metric_accumulator.cpp
+[ 76%] Building CXX object src/CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/average_accumulator.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/average_accumulator.cpp.o -MF CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/average_accumulator.cpp.o.d -o CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/average_accumulator.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/metric_accumulator_impl/average_accumulator.cpp
+[ 82%] Building CXX object src/CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/sum_average_accumulator.cpp.o
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/c++  -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT src/CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/sum_average_accumulator.cpp.o -MF CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/sum_average_accumulator.cpp.o.d -o CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/sum_average_accumulator.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/src/metric_accumulator_impl/sum_average_accumulator.cpp
+[ 88%] Linking CXX static library libmetric_accumulator.a
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -P CMakeFiles/metric_accumulator.dir/cmake_clean_target.cmake
+cd /home/mak/Projects/AST_Tree_Analyser/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/metric_accumulator.dir/link.txt --verbose=1
+/usr/bin/ar qc libmetric_accumulator.a CMakeFiles/metric_accumulator.dir/metric_accumulator.cpp.o CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/average_accumulator.cpp.o CMakeFiles/metric_accumulator.dir/metric_accumulator_impl/sum_average_accumulator.cpp.o
+/usr/bin/ranlib libmetric_accumulator.a
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 88%] Built target metric_accumulator
+make  -f CMakeFiles/analyser.dir/build.make CMakeFiles/analyser.dir/depend
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+cd /home/mak/Projects/AST_Tree_Analyser/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mak/Projects/AST_Tree_Analyser /home/mak/Projects/AST_Tree_Analyser /home/mak/Projects/AST_Tree_Analyser/build /home/mak/Projects/AST_Tree_Analyser/build /home/mak/Projects/AST_Tree_Analyser/build/CMakeFiles/analyser.dir/DependInfo.cmake "--color="
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+make  -f CMakeFiles/analyser.dir/build.make CMakeFiles/analyser.dir/build
+make[3]: Entering directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[ 94%] Building CXX object CMakeFiles/analyser.dir/main.cpp.o
+/usr/bin/c++ -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/home/mak/Projects/AST_Tree_Analyser/include -I/home/mak/Projects/AST_Tree_Analyser/src -g -g3 -ggdb -O0 -fno-omit-frame-pointer -std=c++23 -g3 -ggdb -O0 -fno-omit-frame-pointer -MD -MT CMakeFiles/analyser.dir/main.cpp.o -MF CMakeFiles/analyser.dir/main.cpp.o.d -o CMakeFiles/analyser.dir/main.cpp.o -c /home/mak/Projects/AST_Tree_Analyser/main.cpp
+[100%] Linking CXX executable analyser
+/usr/bin/cmake -E cmake_link_script CMakeFiles/analyser.dir/link.txt --verbose=1
+/usr/bin/c++ -g -g3 -ggdb -O0 -fno-omit-frame-pointer CMakeFiles/analyser.dir/main.cpp.o -o analyser  src/libmetric_accumulator.a src/libmetric.a src/libcmd_options.a /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.83.0 src/libfunction.a src/libfile.a 
+make[3]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+[100%] Built target analyser
+make[2]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+/usr/bin/cmake -E cmake_progress_start /home/mak/Projects/AST_Tree_Analyser/build/CMakeFiles 0
+make[1]: Leaving directory '/home/mak/Projects/AST_Tree_Analyser/build'
+
+src/CMakeFiles/file.dir/file.cpp.o:     file format elf64-x86-64
+
+Contents of the .debug_info section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Compilation Unit @ offset 0:
+   Length:        0x108df (32-bit)
+   Version:       5
+   Unit Type:     DW_UT_compile (1)
+   Abbrev Offset: 0
+   Pointer Size:  8
+ <0><c>: Abbrev Number: 185 (DW_TAG_compile_unit)
+    <e>   DW_AT_producer    : (indirect string, offset: 0x20841): GNU C++23 14.2.0 -mtune=generic -march=x86-64 -g -g3 -ggdb -g3 -ggdb -O0 -std=c++23 -fno-omit-frame-pointer -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+    <12>   DW_AT_language    : 33	(C++14)
+    <13>   DW_AT_name        : (indirect line string, offset: 0x2f): /home/mak/Projects/AST_Tree_Analyser/src/file.cpp
+    <17>   DW_AT_comp_dir    : (indirect line string, offset: 0): /home/mak/Projects/AST_Tree_Analyser/build/src
+    <1b>   DW_AT_ranges      : 0x6b
+    <1f>   DW_AT_low_pc      : 0
+    <27>   DW_AT_stmt_list   : 0
+    <2b>   DW_AT_macros      : 0
+--
+ <1><108dc>: Abbrev Number: 100 (DW_TAG_subprogram)
+    <108dd>   DW_AT_specification: <0x8c0a>
+    <108e1>   DW_AT_inline      : 3	(declared as inline and inlined)
+ <1><108e2>: Abbrev Number: 0
+
+Contents of the .debug_abbrev section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Number TAG (0)
+   1      DW_TAG_formal_parameter    [no children]
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+--
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_call_all_calls DW_FORM_flag_present
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+
+Contents of the .debug_aranges section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Length:                   2460
+  Version:                  2
+  Offset into .debug_info:  0
+  Pointer Size:             8
+--
+    0000000000000000 0000000000000012
+    0000000000000000 0000000000000012
+    0000000000000000 0000000000000049
+    0000000000000000 0000000000000000
+
+Contents of the .debug_rnglists section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+
+ Table at Offset: 0:
+  Length:          0x67d
+  DWARF version:   5
+--
+    00000662 0000000000000000 0000000000000012 
+    0000066c 0000000000000000 0000000000000012 
+    00000676 0000000000000000 0000000000000049 
+    00000680 <End of list>
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+  Offset into .debug_line:     0
+--
+ DW_MACRO_end_file
+ DW_MACRO_import - offset : 0
+ DW_MACRO_end_file
+ DW_MACRO_end_file
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 0 macro : __unix__ 1
+ DW_MACRO_define_strp - lineno : 0 macro : __ELF__ 1
+ DW_MACRO_define_strp - lineno : 0 macro : __DECIMAL_BID_FORMAT__ 1
+ DW_MACRO_define_strp - lineno : 0 macro : _GNU_SOURCE 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 39 macro : __STDC_IEC_60559_BFP__ 201404L
+ DW_MACRO_define_strp - lineno : 48 macro : __STDC_IEC_559_COMPLEX__ 1
+ DW_MACRO_define_strp - lineno : 49 macro : __STDC_IEC_60559_COMPLEX__ 201404L
+ DW_MACRO_define_strp - lineno : 62 macro : __STDC_ISO_10646__ 201706L
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 653 macro : _GLIBCXX_SYNCHRONIZATION_HAPPENS_AFTER(A) 
+ DW_MACRO_define_strp - lineno : 657 macro : _GLIBCXX_BEGIN_EXTERN_C extern "C" {
+ DW_MACRO_define_strp - lineno : 658 macro : _GLIBCXX_END_EXTERN_C }
+ DW_MACRO_define_strp - lineno : 660 macro : _GLIBCXX_USE_ALLOCATOR_NEW 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 31 macro : _GLIBCXX_OS_DEFINES 1
+ DW_MACRO_define_strp - lineno : 37 macro : __NO_CTYPE 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 372 macro : __USE_ISOC99
+ DW_MACRO_define_strp - lineno : 373 macro : __USE_ISOC99 1
+ DW_MACRO_define_strp - lineno : 383 macro : __USE_LARGEFILE 1
+ DW_MACRO_define_strp - lineno : 387 macro : __USE_LARGEFILE64 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 4 macro : __WORDSIZE 64
+ DW_MACRO_define_strp - lineno : 12 macro : __WORDSIZE_TIME64_COMPAT32 1
+ DW_MACRO_define_strp - lineno : 14 macro : __SYSCALL_WORDSIZE 64
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 489 macro : __GNU_LIBRARY__ 6
+ DW_MACRO_define_strp - lineno : 493 macro : __GLIBC__ 2
+ DW_MACRO_define_strp - lineno : 494 macro : __GLIBC_MINOR__ 39
+ DW_MACRO_define_strp - lineno : 496 macro : __GLIBC_PREREQ(maj,min) ((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 528 macro : __glibc_likely(cond) __builtin_expect ((cond), 1)
+ DW_MACRO_define_strp - lineno : 549 macro : __attribute_nonstring__ __attribute__ ((__nonstring__))
+ DW_MACRO_undef_strp - lineno : 555 macro : __attribute_copy__
+ DW_MACRO_define_strp - lineno : 559 macro : __attribute_copy__(arg) __attribute__ ((__copy__ (arg)))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 694 macro : __attr_access_none(argno) __attribute__ ((__access__ (__none__, argno)))
+ DW_MACRO_define_strp - lineno : 707 macro : __attr_dealloc(dealloc,argno) __attribute__ ((__malloc__ (dealloc, argno)))
+ DW_MACRO_define_strp - lineno : 709 macro : __attr_dealloc_free __attr_dealloc (__builtin_free, 1)
+ DW_MACRO_define_strp - lineno : 718 macro : __attribute_returns_twice__ __attribute__ ((__returns_twice__))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 14 macro : __stub_revoke 
+ DW_MACRO_define_strp - lineno : 15 macro : __stub_setlogin 
+ DW_MACRO_define_strp - lineno : 16 macro : __stub_sigreturn 
+ DW_MACRO_define_strp - lineno : 17 macro : __stub_stty 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 60 macro : _GLIBCXX_HAVE_FLOAT128_MATH 1
+ DW_MACRO_define_strp - lineno : 66 macro : _GLIBCXX_MAY_HAVE___CXA_THREAD_ATEXIT_IMPL 1
+ DW_MACRO_define_strp - lineno : 73 macro : _GLIBCXX_NATIVE_THREAD_ID pthread_self()
+ DW_MACRO_define_strp - lineno : 86 macro : _GLIBCXX_GTHREAD_USE_WEAK 0
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 875 macro : _GLIBCXX_USE_TBB_PAR_BACKEND __has_include(<tbb/tbb.h>)
+ DW_MACRO_define_strp - lineno : 879 macro : _PSTL_PAR_BACKEND_TBB 
+ DW_MACRO_define_strp - lineno : 884 macro : _PSTL_ASSERT(_Condition) __glibcxx_assert(_Condition)
+ DW_MACRO_define_strp - lineno : 885 macro : _PSTL_ASSERT_MSG(_Condition,_Message) __glibcxx_assert(_Condition)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 175 macro : _PSTL_PRAGMA_LOCATION " [Parallel STL message]: "
+ DW_MACRO_define_strp - lineno : 178 macro : _PSTL_PRAGMA_MESSAGE_IMPL(x) _PSTL_PRAGMA(message(_PSTL_STRING_CONCAT(_PSTL_PRAGMA_LOCATION, x)))
+ DW_MACRO_define_strp - lineno : 184 macro : _PSTL_PRAGMA_MESSAGE(x) 
+ DW_MACRO_define_strp - lineno : 185 macro : _PSTL_PRAGMA_MESSAGE_POLICIES(x) 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 1814 macro : _GLIBCXX_X86_RDRAND 1
+ DW_MACRO_define_strp - lineno : 1817 macro : _GLIBCXX_X86_RDSEED 1
+ DW_MACRO_define_strp - lineno : 1820 macro : _GLIBCXX_ZONEINFO_DIR "/usr/share/zoneinfo"
+ DW_MACRO_define_strp - lineno : 1823 macro : _GTHREAD_USE_MUTEX_TIMEDLOCK 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 24 macro : _WCHAR_H 1
+ DW_MACRO_define_strp - lineno : 26 macro : __GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 96 macro : __GLIBC_USE_IEC_60559_FUNCS_EXT_C2X
+ DW_MACRO_define_strp - lineno : 98 macro : __GLIBC_USE_IEC_60559_FUNCS_EXT_C2X 1
+ DW_MACRO_undef_strp - lineno : 105 macro : __GLIBC_USE_IEC_60559_TYPES_EXT
+ DW_MACRO_define_strp - lineno : 107 macro : __GLIBC_USE_IEC_60559_TYPES_EXT 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 48 macro : __HAVE_FLOAT64X 1
+ DW_MACRO_define_strp - lineno : 54 macro : __HAVE_FLOAT64X_LONG_DOUBLE 1
+ DW_MACRO_define_strp - lineno : 65 macro : __f128(x) x ##f128
+ DW_MACRO_define_strp - lineno : 77 macro : __CFLOAT128 _Complex _Float128
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 151 macro : __CFLOAT32 _Complex _Float32
+ DW_MACRO_define_strp - lineno : 163 macro : __CFLOAT64 _Complex _Float64
+ DW_MACRO_define_strp - lineno : 171 macro : __CFLOAT32X _Complex _Float32x
+ DW_MACRO_define_strp - lineno : 183 macro : __CFLOAT64X _Complex _Float64x
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 32 macro : __need_size_t 
+ DW_MACRO_define_strp - lineno : 33 macro : __need_wchar_t 
+ DW_MACRO_define_strp - lineno : 34 macro : __need_NULL 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 349 macro : __need_wchar_t
+ DW_MACRO_undef_strp - lineno : 399 macro : NULL
+ DW_MACRO_define_strp - lineno : 401 macro : NULL __null
+ DW_MACRO_undef_strp - lineno : 410 macro : __need_NULL
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_undef_strp - lineno : 34 macro : __need___va_list
+ DW_MACRO_define_strp - lineno : 39 macro : __GNUC_VA_LIST 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 20 macro : _BITS_WCHAR_H 1
+ DW_MACRO_define_strp - lineno : 34 macro : __WCHAR_MAX __WCHAR_MAX__
+ DW_MACRO_define_strp - lineno : 42 macro : __WCHAR_MIN __WCHAR_MIN__
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 2 macro : __wint_t_defined 1
+ DW_MACRO_define_strp - lineno : 10 macro : _WINT_T 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 70 macro : WCHAR_MIN __WCHAR_MIN
+ DW_MACRO_define_strp - lineno : 71 macro : WCHAR_MAX __WCHAR_MAX
+ DW_MACRO_define_strp - lineno : 75 macro : WEOF (0xffffffffu)
+ DW_MACRO_define_strp - lineno : 713 macro : __attr_dealloc_fclose 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 131 macro : wscanf
+ DW_MACRO_undef_strp - lineno : 240 macro : wcstold
+ DW_MACRO_undef_strp - lineno : 241 macro : wcstoll
+ DW_MACRO_undef_strp - lineno : 242 macro : wcstoull
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 31 macro : _EXCEPTION_DEFINES_H 1
+ DW_MACRO_define_strp - lineno : 40 macro : __try try
+ DW_MACRO_define_strp - lineno : 41 macro : __catch(X) catch(X)
+ DW_MACRO_define_strp - lineno : 42 macro : __throw_exception_again throw
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 415 macro : offsetof
+ DW_MACRO_define_strp - lineno : 416 macro : offsetof(TYPE,MEMBER) __builtin_offsetof (TYPE, MEMBER)
+ DW_MACRO_define_strp - lineno : 421 macro : _GCC_MAX_ALIGN_T 
+ DW_MACRO_define_strp - lineno : 442 macro : _GXX_NULLPTR_T 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 42 macro : _GLIBCXX_CDTOR_CALLABI 
+ DW_MACRO_define_strp - lineno : 43 macro : _GLIBCXX_HAVE_CDTOR_CALLABI 0
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 71 macro : __GXX_MERGED_TYPEINFO_NAMES 0
+ DW_MACRO_define_strp - lineno : 79 macro : __GXX_TYPEINFO_EQUALITY_INLINE 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 36 macro : _NEW 
+ DW_MACRO_define_strp - lineno : 43 macro : __glibcxx_want_launder 
+ DW_MACRO_define_strp - lineno : 44 macro : __glibcxx_want_hardware_interference_size 
+ DW_MACRO_define_strp - lineno : 45 macro : __glibcxx_want_destroying_delete 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 59 macro : __glibcxx_want_type_identity 
+ DW_MACRO_define_strp - lineno : 60 macro : __glibcxx_want_type_trait_variable_templates 
+ DW_MACRO_define_strp - lineno : 61 macro : __glibcxx_want_unwrap_ref 
+ DW_MACRO_define_strp - lineno : 62 macro : __glibcxx_want_void_t 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 183 macro : _GLIBCXX_FWDREF(_Tp) _Tp&&
+ DW_MACRO_define_strp - lineno : 184 macro : _GLIBCXX_MOVE(__val) std::move(__val)
+ DW_MACRO_define_strp - lineno : 185 macro : _GLIBCXX_FORWARD(_Tp,__val) std::forward<_Tp>(__val)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 47 macro : _GLIBCXX_EH_PTR_USED 
+ DW_MACRO_undef_strp - lineno : 288 macro : _GLIBCXX_EH_PTR_USED
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 31 macro : _COMPARE 
+ DW_MACRO_define_strp - lineno : 35 macro : __glibcxx_want_three_way_comparison 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 31 macro : _GLIBCXX_CONCEPTS 1
+ DW_MACRO_define_strp - lineno : 35 macro : __glibcxx_want_concepts 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 49 macro : __glibcxx_class_requires(_a,_b) 
+ DW_MACRO_define_strp - lineno : 50 macro : __glibcxx_class_requires2(_a,_b,_c) 
+ DW_MACRO_define_strp - lineno : 51 macro : __glibcxx_class_requires3(_a,_b,_c,_d) 
+ DW_MACRO_define_strp - lineno : 52 macro : __glibcxx_class_requires4(_a,_b,_c,_d,_e) 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 37 macro : __glibcxx_requires_subscript(_N) 
+ DW_MACRO_define_strp - lineno : 63 macro : _GLIBCXX_DEBUG_ASSERT(_Condition) 
+ DW_MACRO_define_strp - lineno : 64 macro : _GLIBCXX_DEBUG_PEDASSERT(_Condition) 
+ DW_MACRO_define_strp - lineno : 65 macro : _GLIBCXX_DEBUG_ONLY(_Statement) 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 23 macro : _LOCALE_H 1
+ DW_MACRO_define_strp - lineno : 27 macro : __need_NULL 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 401 macro : NULL __null
+ DW_MACRO_undef_strp - lineno : 410 macro : __need_NULL
+ DW_MACRO_undef_strp - lineno : 415 macro : offsetof
+ DW_MACRO_define_strp - lineno : 416 macro : offsetof(TYPE,MEMBER) __builtin_offsetof (TYPE, MEMBER)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 35 macro : __LC_ADDRESS 9
+ DW_MACRO_define_strp - lineno : 36 macro : __LC_TELEPHONE 10
+ DW_MACRO_define_strp - lineno : 37 macro : __LC_MEASUREMENT 11
+ DW_MACRO_define_strp - lineno : 38 macro : __LC_IDENTIFICATION 12
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 158 macro : LC_MEASUREMENT_MASK (1 << __LC_MEASUREMENT)
+ DW_MACRO_define_strp - lineno : 159 macro : LC_IDENTIFICATION_MASK (1 << __LC_IDENTIFICATION)
+ DW_MACRO_define_strp - lineno : 160 macro : LC_ALL_MASK (LC_CTYPE_MASK | LC_NUMERIC_MASK | LC_TIME_MASK | LC_COLLATE_MASK | LC_MONETARY_MASK | LC_MESSAGES_MASK | LC_PAPER_MASK | LC_NAME_MASK | LC_ADDRESS_MASK | LC_TELEPHONE_MASK | LC_MEASUREMENT_MASK | LC_IDENTIFICATION_MASK )
+ DW_MACRO_define_strp - lineno : 191 macro : LC_GLOBAL_LOCALE ((locale_t) -1L)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 45 macro : _GLIBCXX_CLOCALE 1
+ DW_MACRO_undef_strp - lineno : 48 macro : setlocale
+ DW_MACRO_undef_strp - lineno : 49 macro : localeconv
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 43 macro : _GLIBCXX_C_LOCALE_GNU 1
+ DW_MACRO_define_strp - lineno : 45 macro : _GLIBCXX_NUM_CATEGORIES 6
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 133 macro : __ULONG32_TYPE unsigned int
+ DW_MACRO_define_strp - lineno : 134 macro : __S64_TYPE long int
+ DW_MACRO_define_strp - lineno : 135 macro : __U64_TYPE unsigned long int
+ DW_MACRO_define_strp - lineno : 137 macro : __STD_TYPE typedef
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 87 macro : __RLIM_T_MATCHES_RLIM64_T 1
+ DW_MACRO_define_strp - lineno : 90 macro : __STATFS_MATCHES_STATFS64 1
+ DW_MACRO_define_strp - lineno : 93 macro : __KERNEL_OLD_TIMEVAL_MATCHES_TIMEVAL64 1
+ DW_MACRO_define_strp - lineno : 103 macro : __FD_SETSIZE 1024
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 24 macro : _BITS_TIME64_H 1
+ DW_MACRO_define_strp - lineno : 30 macro : __TIME64_T_TYPE __TIME_T_TYPE
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 20 macro : _BITS_ENDIAN_H 1
+ DW_MACRO_define_strp - lineno : 30 macro : __LITTLE_ENDIAN 1234
+ DW_MACRO_define_strp - lineno : 31 macro : __BIG_ENDIAN 4321
+ DW_MACRO_define_strp - lineno : 32 macro : __PDP_ENDIAN 3412
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 2 macro : _BITS_ENDIANNESS_H 1
+ DW_MACRO_define_strp - lineno : 9 macro : __BYTE_ORDER __LITTLE_ENDIAN
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 40 macro : __FLOAT_WORD_ORDER __BYTE_ORDER
+ DW_MACRO_define_strp - lineno : 44 macro : __LONG_LONG_PAIR(HI,LO) LO, HI
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 102 macro : __exctype(name) extern int name (int) __THROW
+ DW_MACRO_define_strp - lineno : 155 macro : __tobody(c,f,a,args) (__extension__ ({ int __res; if (sizeof (c) > 1) { if (__builtin_constant_p (c)) { int __c = (c); __res = __c < -128 || __c > 255 ? __c : (a)[__c]; } else __res = f args; } else __res = (a)[(int) (c)]; __res; }))
+ DW_MACRO_define_strp - lineno : 241 macro : __isctype_l(c,type,locale) ((locale)->__ctype_b[(int) (c)] & (unsigned short int) type)
+ DW_MACRO_define_strp - lineno : 244 macro : __exctype_l(name) extern int name (int, locale_t) __THROW
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 58 macro : isxdigit
+ DW_MACRO_undef_strp - lineno : 59 macro : tolower
+ DW_MACRO_undef_strp - lineno : 60 macro : toupper
+ DW_MACRO_undef_strp - lineno : 83 macro : isblank
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 27 macro : _GLIBCXX_GCC_GTHR_POSIX_H 
+ DW_MACRO_define_strp - lineno : 32 macro : __GTHREADS 1
+ DW_MACRO_define_strp - lineno : 33 macro : __GTHREADS_CXX0X 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 20 macro : _SCHED_H 1
+ DW_MACRO_define_strp - lineno : 27 macro : __need_size_t 
+ DW_MACRO_define_strp - lineno : 28 macro : __need_NULL 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 71 macro : CLONE_NEWPID 0x20000000
+ DW_MACRO_define_strp - lineno : 72 macro : CLONE_NEWNET 0x40000000
+ DW_MACRO_define_strp - lineno : 73 macro : CLONE_IO 0x80000000
+ DW_MACRO_define_strp - lineno : 77 macro : CLONE_NEWTIME 0x00000080
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 99 macro : __CPU_OP_S(setsize,destset,srcset1,srcset2,op) (__extension__ ({ cpu_set_t *__dest = (destset); const __cpu_mask *__arr1 = (srcset1)->__bits; const __cpu_mask *__arr2 = (srcset2)->__bits; size_t __imax = (setsize) / sizeof (__cpu_mask); size_t __i; for (__i = 0; __i < __imax; ++__i) ((__cpu_mask *) __dest->__bits)[__i] = __arr1[__i] op __arr2[__i]; __dest; }))
+ DW_MACRO_define_strp - lineno : 110 macro : __CPU_ALLOC_SIZE(count) ((((count) + __NCPUBITS - 1) / __NCPUBITS) * sizeof (__cpu_mask))
+ DW_MACRO_define_strp - lineno : 112 macro : __CPU_ALLOC(count) __sched_cpualloc (count)
+ DW_MACRO_define_strp - lineno : 113 macro : __CPU_FREE(cpuset) __sched_cpufree (cpuset)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 121 macro : CPU_XOR_S(setsize,destset,srcset1,srcset2) __CPU_OP_S (setsize, destset, srcset1, srcset2, ^)
+ DW_MACRO_define_strp - lineno : 124 macro : CPU_ALLOC_SIZE(count) __CPU_ALLOC_SIZE (count)
+ DW_MACRO_define_strp - lineno : 125 macro : CPU_ALLOC(count) __CPU_ALLOC (count)
+ DW_MACRO_define_strp - lineno : 126 macro : CPU_FREE(cpuset) __CPU_FREE (cpuset)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 23 macro : _TIME_H 1
+ DW_MACRO_define_strp - lineno : 27 macro : __need_size_t 
+ DW_MACRO_define_strp - lineno : 28 macro : __need_NULL 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 62 macro : CLOCK_REALTIME_ALARM 8
+ DW_MACRO_define_strp - lineno : 64 macro : CLOCK_BOOTTIME_ALARM 9
+ DW_MACRO_define_strp - lineno : 66 macro : CLOCK_TAI 11
+ DW_MACRO_define_strp - lineno : 69 macro : TIMER_ABSTIME 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 133 macro : STA_NANO 0x2000
+ DW_MACRO_define_strp - lineno : 134 macro : STA_MODE 0x4000
+ DW_MACRO_define_strp - lineno : 135 macro : STA_CLK 0x8000
+ DW_MACRO_define_strp - lineno : 138 macro : STA_RONLY (STA_PPSSIGNAL | STA_PPSJITTER | STA_PPSWANDER | STA_PPSERROR | STA_CLOCKERR | STA_NANO | STA_MODE | STA_CLK)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 65 macro : TIME_UTC 1
+ DW_MACRO_define_strp - lineno : 240 macro : __isleap(year) ((year) % 4 == 0 && ((year) % 100 != 0 || (year) % 400 == 0))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 44 macro : __SIZEOF_PTHREAD_RWLOCKATTR_T 8
+ DW_MACRO_define_strp - lineno : 45 macro : __SIZEOF_PTHREAD_BARRIERATTR_T 4
+ DW_MACRO_define_strp - lineno : 47 macro : __LOCK_ALIGNMENT 
+ DW_MACRO_define_strp - lineno : 48 macro : __ONCE_ALIGNMENT 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 20 macro : _THREAD_MUTEX_INTERNAL_H 1
+ DW_MACRO_define_strp - lineno : 37 macro : __PTHREAD_MUTEX_HAVE_PREV 1
+ DW_MACRO_define_strp - lineno : 56 macro : __PTHREAD_MUTEX_INITIALIZER(__kind) 0, 0, 0, 0, __kind, 0, 0, { 0, 0 }
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 21 macro : _RWLOCK_INTERNAL_H 
+ DW_MACRO_define_strp - lineno : 40 macro : __PTHREAD_RWLOCK_ELISION_EXTRA 0, { 0, 0, 0, 0, 0, 0, 0 }
+ DW_MACRO_define_strp - lineno : 58 macro : __PTHREAD_RWLOCK_INITIALIZER(__flags) 0, 0, 0, 0, 0, 0, 0, 0, __PTHREAD_RWLOCK_ELISION_EXTRA, 0, __flags
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 2 macro : ____sigset_t_defined 
+ DW_MACRO_define_strp - lineno : 4 macro : _SIGSET_NWORDS (1024 / (8 * sizeof (unsigned long int)))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 22 macro : __SC_THREAD_STACK_MIN_VALUE 75
+ DW_MACRO_define_strp - lineno : 26 macro : PTHREAD_STACK_MIN __sysconf (__SC_THREAD_STACK_MIN_VALUE)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 592 macro : pthread_cleanup_push(routine,arg) do { __pthread_cleanup_class __clframe (routine, arg)
+ DW_MACRO_define_strp - lineno : 598 macro : pthread_cleanup_pop(execute) __clframe.__setdoit (execute); } while (0)
+ DW_MACRO_define_strp - lineno : 606 macro : pthread_cleanup_push_defer_np(routine,arg) do { __pthread_cleanup_class __clframe (routine, arg); __clframe.__defer ()
+ DW_MACRO_define_strp - lineno : 614 macro : pthread_cleanup_pop_restore_np(execute) __clframe.__restore (); __clframe.__setdoit (execute); } while (0)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 76 macro : __GTHREAD_TIME_INIT {0,0}
+ DW_MACRO_define_strp - lineno : 101 macro : __gthrw2(name,name2,type) 
+ DW_MACRO_define_strp - lineno : 102 macro : __gthrw_(name) name
+ DW_MACRO_define_strp - lineno : 106 macro : __gthrw(name) __gthrw2(__gthrw_ ## name,name,name)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 30 macro : _GLIBCXX_ATOMIC_WORD_H 1
+ DW_MACRO_define_strp - lineno : 36 macro : _GLIBCXX_READ_MEM_BARRIER __atomic_thread_fence (__ATOMIC_ACQUIRE)
+ DW_MACRO_define_strp - lineno : 38 macro : _GLIBCXX_WRITE_MEM_BARRIER __atomic_thread_fence (__ATOMIC_RELEASE)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 159 macro : _GLIBCXX_SIZED_DEALLOC(p,n) (p), (n) * sizeof(_Tp)
+ DW_MACRO_undef_strp - lineno : 175 macro : _GLIBCXX_SIZED_DEALLOC
+ DW_MACRO_undef_strp - lineno : 176 macro : _GLIBCXX_OPERATOR_DELETE
+ DW_MACRO_undef_strp - lineno : 177 macro : _GLIBCXX_OPERATOR_NEW
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 33 macro : _CPP_TYPE_TRAITS_H 1
+ DW_MACRO_define_strp - lineno : 255 macro : __INT_N(TYPE) __extension__ template<> struct __is_integer<TYPE> { enum { __value = 1 }; typedef __true_type __type; }; __extension__ template<> struct __is_integer<unsigned TYPE> { enum { __value = 1 }; typedef __true_type __type; };
+ DW_MACRO_undef_strp - lineno : 284 macro : __INT_N
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 2981 macro : _GLIBCXX_MAKE_MOVE_ITERATOR(_Iter) std::make_move_iterator(_Iter)
+ DW_MACRO_define_strp - lineno : 2982 macro : _GLIBCXX_MAKE_MOVE_IF_NOEXCEPT_ITERATOR(_Iter) std::__make_move_if_noexcept_iterator(_Iter)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 181 macro : __glibcxx_floating
+ DW_MACRO_undef_strp - lineno : 182 macro : __glibcxx_max_digits10
+ DW_MACRO_undef_strp - lineno : 183 macro : __glibcxx_digits10
+ DW_MACRO_undef_strp - lineno : 184 macro : __glibcxx_max_exponent10
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 83 macro : __glibcxx_requires_irreflexive(_First,_Last) 
+ DW_MACRO_define_strp - lineno : 84 macro : __glibcxx_requires_irreflexive2(_First,_Last) 
+ DW_MACRO_define_strp - lineno : 85 macro : __glibcxx_requires_irreflexive_pred(_First,_Last,_Pred) 
+ DW_MACRO_define_strp - lineno : 86 macro : __glibcxx_requires_irreflexive_pred2(_First,_Last,_Pred) 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 57 macro : __glibcxx_want_byteswap 
+ DW_MACRO_define_strp - lineno : 58 macro : __glibcxx_want_bitops 
+ DW_MACRO_define_strp - lineno : 59 macro : __glibcxx_want_int_pow2 
+ DW_MACRO_define_strp - lineno : 60 macro : __glibcxx_want_endian 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 687 macro : _GLIBCXX_MOVE3(_Tp,_Up,_Vp) std::move(_Tp, _Up, _Vp)
+ DW_MACRO_define_strp - lineno : 927 macro : _GLIBCXX_MOVE_BACKWARD3(_Tp,_Up,_Vp) std::move_backward(_Tp, _Up, _Vp)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 87 macro : _GLIBCXX_MEM_FN_TRAITS2(_CV,_REF,_LVAL,_RVAL) template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) _CV _REF> : _Mem_fn_traits_base<_Res, _CV _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes... ...) _CV _REF> : _Mem_fn_traits_base<_Res, _CV _Class, _ArgTypes...> { using __vararg = true_type; };
+ DW_MACRO_define_strp - lineno : 101 macro : _GLIBCXX_MEM_FN_TRAITS(_REF,_LVAL,_RVAL) _GLIBCXX_MEM_FN_TRAITS2( , _REF, _LVAL, _RVAL) _GLIBCXX_MEM_FN_TRAITS2(const , _REF, _LVAL, _RVAL) _GLIBCXX_MEM_FN_TRAITS2(volatile , _REF, _LVAL, _RVAL) _GLIBCXX_MEM_FN_TRAITS2(const volatile, _REF, _LVAL, _RVAL)
+ DW_MACRO_undef_strp - lineno : 117 macro : _GLIBCXX_MEM_FN_TRAITS
+ DW_MACRO_undef_strp - lineno : 118 macro : _GLIBCXX_MEM_FN_TRAITS2
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 40 macro : __glibcxx_want_freestanding_string_view 
+ DW_MACRO_define_strp - lineno : 41 macro : __glibcxx_want_string_view 
+ DW_MACRO_define_strp - lineno : 42 macro : __glibcxx_want_starts_ends_with 
+ DW_MACRO_define_strp - lineno : 43 macro : __glibcxx_want_string_contains 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 31 macro : _FUNCTIONAL_HASH_H 1
+ DW_MACRO_define_strp - lineno : 115 macro : _Cxx_hashtable_define_trivial_hash(_Tp) template<> struct hash<_Tp> : public __hash_base<size_t, _Tp> { size_t operator()(_Tp __val) const noexcept { return static_cast<size_t>(__val); } };
+ DW_MACRO_undef_strp - lineno : 199 macro : _Cxx_hashtable_define_trivial_hash
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 30 macro : _GLIBCXX_NUMBERS 1
+ DW_MACRO_define_strp - lineno : 34 macro : __glibcxx_want_math_constants 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 138 macro : __glibcxx_numbers(TYPE,SUFFIX) template<> inline constexpr TYPE e_v<TYPE> = 2.718281828459045235360287471352662498 ##SUFFIX; template<> inline constexpr TYPE log2e_v<TYPE> = 1.442695040888963407359924681001892137 ##SUFFIX; template<> inline constexpr TYPE log10e_v<TYPE> = 0.434294481903251827651128918916605082 ##SUFFIX; template<> inline constexpr TYPE pi_v<TYPE> = 3.141592653589793238462643383279502884 ##SUFFIX; template<> inline constexpr TYPE inv_pi_v<TYPE> = 0.318309886183790671537767526745028724 ##SUFFIX; template<> inline constexpr TYPE inv_sqrtpi_v<TYPE> = 0.564189583547756286948079451560772586 ##SUFFIX; template<> inline constexpr TYPE ln2_v<TYPE> = 0.693147180559945309417232121458176568 ##SUFFIX; template<> inline constexpr TYPE ln10_v<TYPE> = 2.302585092994045684017991454684364208 ##SUFFIX; template<> inline constexpr TYPE sqrt2_v<TYPE> = 1.414213562373095048801688724209698079 ##SUFFIX; template<> inline constexpr TYPE sqrt3_v<TYPE> = 1.732050807568877293527446341505872367 ##SUFFIX; template<> inline constexpr TYPE inv_sqrt3_v<TYPE> = 0.577350269189625764509148780501957456 ##SUFFIX; template<> inline constexpr TYPE egamma_v<TYPE> = 0.577215664901532860606512090082402431 ##SUFFIX; template<> inline constexpr TYPE phi_v<TYPE> = 1.618033988749894848204586834365638118 ##SUFFIX
+ DW_MACRO_undef_strp - lineno : 228 macro : __glibcxx_numbers
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 44 macro : _GLIBCXX_CSTDLIB 1
+ DW_MACRO_define_strp - lineno : 78 macro : _GLIBCXX_INCLUDE_NEXT_C_HEADERS 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 29 macro : __need_size_t 
+ DW_MACRO_define_strp - lineno : 30 macro : __need_wchar_t 
+ DW_MACRO_define_strp - lineno : 31 macro : __need_NULL 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 33 macro : WNOWAIT 0x01000000
+ DW_MACRO_define_strp - lineno : 36 macro : __WNOTHREAD 0x20000000
+ DW_MACRO_define_strp - lineno : 38 macro : __WALL 0x40000000
+ DW_MACRO_define_strp - lineno : 39 macro : __WCLONE 0x80000000
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 56 macro : __W_EXITCODE(ret,sig) ((ret) << 8 | (sig))
+ DW_MACRO_define_strp - lineno : 57 macro : __W_STOPCODE(sig) ((sig) << 8 | 0x7f)
+ DW_MACRO_define_strp - lineno : 58 macro : __W_CONTINUED 0xffff
+ DW_MACRO_define_strp - lineno : 59 macro : __WCOREFLAG 0x80
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 87 macro : RAND_MAX 2147483647
+ DW_MACRO_define_strp - lineno : 92 macro : EXIT_FAILURE 1
+ DW_MACRO_define_strp - lineno : 93 macro : EXIT_SUCCESS 0
+ DW_MACRO_define_strp - lineno : 97 macro : MB_CUR_MAX (__ctype_get_mb_cur_max ())
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 122 macro : __key_t_defined 
+ DW_MACRO_define_strp - lineno : 135 macro : __useconds_t_defined 
+ DW_MACRO_define_strp - lineno : 139 macro : __suseconds_t_defined 
+ DW_MACRO_define_strp - lineno : 143 macro : __need_size_t 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 27 macro : LITTLE_ENDIAN __LITTLE_ENDIAN
+ DW_MACRO_define_strp - lineno : 28 macro : BIG_ENDIAN __BIG_ENDIAN
+ DW_MACRO_define_strp - lineno : 29 macro : PDP_ENDIAN __PDP_ENDIAN
+ DW_MACRO_define_strp - lineno : 30 macro : BYTE_ORDER __BYTE_ORDER
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 24 macro : _BITS_BYTESWAP_H 1
+ DW_MACRO_define_strp - lineno : 30 macro : __bswap_constant_16(x) ((__uint16_t) ((((x) >> 8) & 0xff) | (((x) & 0xff) << 8)))
+ DW_MACRO_define_strp - lineno : 44 macro : __bswap_constant_32(x) ((((x) & 0xff000000u) >> 24) | (((x) & 0x00ff0000u) >> 8) | (((x) & 0x0000ff00u) << 8) | (((x) & 0x000000ffu) << 24))
+ DW_MACRO_define_strp - lineno : 59 macro : __bswap_constant_64(x) ((((x) & 0xff00000000000000ull) >> 56) | (((x) & 0x00ff000000000000ull) >> 40) | (((x) & 0x0000ff0000000000ull) >> 24) | (((x) & 0x000000ff00000000ull) >> 8) | (((x) & 0x00000000ff000000ull) << 8) | (((x) & 0x0000000000ff0000ull) << 24) | (((x) & 0x000000000000ff00ull) << 40) | (((x) & 0x00000000000000ffull) << 56))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 49 macro : htobe64(x) __bswap_64 (x)
+ DW_MACRO_define_strp - lineno : 50 macro : htole64(x) __uint64_identity (x)
+ DW_MACRO_define_strp - lineno : 51 macro : be64toh(x) __bswap_64 (x)
+ DW_MACRO_define_strp - lineno : 52 macro : le64toh(x) __uint64_identity (x)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 25 macro : __FD_ZERO(s) do { unsigned int __i; fd_set *__arr = (s); for (__i = 0; __i < sizeof (fd_set) / sizeof (__fd_mask); ++__i) __FDS_BITS (__arr)[__i] = 0; } while (0)
+ DW_MACRO_define_strp - lineno : 32 macro : __FD_SET(d,s) ((void) (__FDS_BITS (s)[__FD_ELT(d)] |= __FD_MASK(d)))
+ DW_MACRO_define_strp - lineno : 34 macro : __FD_CLR(d,s) ((void) (__FDS_BITS (s)[__FD_ELT(d)] &= ~__FD_MASK(d)))
+ DW_MACRO_define_strp - lineno : 36 macro : __FD_ISSET(d,s) ((__FDS_BITS (s)[__FD_ELT (d)] & __FD_MASK (d)) != 0)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 85 macro : FD_SET(fd,fdsetp) __FD_SET (fd, fdsetp)
+ DW_MACRO_define_strp - lineno : 86 macro : FD_CLR(fd,fdsetp) __FD_CLR (fd, fdsetp)
+ DW_MACRO_define_strp - lineno : 87 macro : FD_ISSET(fd,fdsetp) __FD_ISSET (fd, fdsetp)
+ DW_MACRO_define_strp - lineno : 88 macro : FD_ZERO(fdsetp) __FD_ZERO (fdsetp)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 186 macro : __blksize_t_defined 
+ DW_MACRO_define_strp - lineno : 193 macro : __blkcnt_t_defined 
+ DW_MACRO_define_strp - lineno : 197 macro : __fsblkcnt_t_defined 
+ DW_MACRO_define_strp - lineno : 201 macro : __fsfilcnt_t_defined 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 19 macro : _ALLOCA_H 1
+ DW_MACRO_define_strp - lineno : 23 macro : __need_size_t 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_undef_strp - lineno : 29 macro : alloca
+ DW_MACRO_define_strp - lineno : 35 macro : alloca(size) __builtin_alloca (size)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 31 macro : _GLIBCXX_BITS_STD_ABS_H 
+ DW_MACRO_define_strp - lineno : 37 macro : _GLIBCXX_INCLUDE_NEXT_C_HEADERS 
+ DW_MACRO_undef_strp - lineno : 42 macro : _GLIBCXX_INCLUDE_NEXT_C_HEADERS
+ DW_MACRO_undef - lineno : 44 macro : abs
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 194 macro : strtoll
+ DW_MACRO_undef_strp - lineno : 195 macro : strtoull
+ DW_MACRO_undef_strp - lineno : 196 macro : strtof
+ DW_MACRO_undef_strp - lineno : 197 macro : strtold
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 25 macro : _STDIO_H 1
+ DW_MACRO_define_strp - lineno : 27 macro : __GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 32 macro : __need_size_t 
+ DW_MACRO_define_strp - lineno : 33 macro : __need_NULL 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 112 macro : __feof_unlocked_body(_fp) (((_fp)->_flags & _IO_EOF_SEEN) != 0)
+ DW_MACRO_define_strp - lineno : 114 macro : _IO_ERR_SEEN 0x0020
+ DW_MACRO_define_strp - lineno : 115 macro : __ferror_unlocked_body(_fp) (((_fp)->_flags & _IO_ERR_SEEN) != 0)
+ DW_MACRO_define_strp - lineno : 117 macro : _IO_USER_LOCK 0x8000
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 115 macro : SEEK_HOLE 4
+ DW_MACRO_define_strp - lineno : 121 macro : P_tmpdir "/tmp"
+ DW_MACRO_define_strp - lineno : 124 macro : L_tmpnam 20
+ DW_MACRO_define_strp - lineno : 125 macro : TMP_MAX 238328
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 20 macro : _BITS_STDIO_LIM_H 1
+ DW_MACRO_define_strp - lineno : 26 macro : FILENAME_MAX 4096
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 171 macro : RENAME_EXCHANGE (1 << 1)
+ DW_MACRO_define_strp - lineno : 172 macro : RENAME_WHITEOUT (1 << 2)
+ DW_MACRO_undef_strp - lineno : 186 macro : __attr_dealloc_fclose
+ DW_MACRO_define_strp - lineno : 187 macro : __attr_dealloc_fclose __attr_dealloc (fclose, 1)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 152 macro : vfscanf
+ DW_MACRO_undef_strp - lineno : 153 macro : vscanf
+ DW_MACRO_undef_strp - lineno : 154 macro : vsnprintf
+ DW_MACRO_undef_strp - lineno : 155 macro : vsscanf
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 35 macro : EMLINK 31
+ DW_MACRO_define_strp - lineno : 36 macro : EPIPE 32
+ DW_MACRO_define_strp - lineno : 37 macro : EDOM 33
+ DW_MACRO_define_strp - lineno : 38 macro : ERANGE 34
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 116 macro : EOWNERDEAD 130
+ DW_MACRO_define_strp - lineno : 117 macro : ENOTRECOVERABLE 131
+ DW_MACRO_define_strp - lineno : 119 macro : ERFKILL 132
+ DW_MACRO_define_strp - lineno : 121 macro : EHWPOISON 133
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 4686 macro : _GLIBCXX_STRING_CONSTEXPR constexpr
+ DW_MACRO_undef_strp - lineno : 4718 macro : _GLIBCXX_STRING_CONSTEXPR
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 40 macro : _BASIC_STRING_TCC 1
+ DW_MACRO_define_strp - lineno : 619 macro : _GLIBCXX_STRING_CONSTEXPR constexpr
+ DW_MACRO_undef_strp - lineno : 830 macro : _GLIBCXX_STRING_CONSTEXPR
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 61 macro : __glibcxx_want_nonmember_container_access 
+ DW_MACRO_define_strp - lineno : 62 macro : __glibcxx_want_string_resize_and_overwrite 
+ DW_MACRO_define_strp - lineno : 63 macro : __glibcxx_want_string_udls 
+ DW_MACRO_define_strp - lineno : 64 macro : __glibcxx_want_to_string 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 45 macro : __need_ptrdiff_t
+ DW_MACRO_undef_strp - lineno : 46 macro : __need_size_t
+ DW_MACRO_undef_strp - lineno : 47 macro : __need_NULL
+ DW_MACRO_undef_strp - lineno : 48 macro : __need_wint_t
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 50 macro : __glibcxx_want_apply 
+ DW_MACRO_define_strp - lineno : 51 macro : __glibcxx_want_make_from_tuple 
+ DW_MACRO_define_strp - lineno : 52 macro : __glibcxx_want_ranges_zip 
+ DW_MACRO_define_strp - lineno : 53 macro : __glibcxx_want_tuple_like 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 35 macro : _LOCALE_CLASSES_TCC 1
+ DW_MACRO_define_strp - lineno : 101 macro : _GLIBCXX_STD_FACET(...) if _GLIBCXX_CONSTEXPR (__is_same(_Facet, __VA_ARGS__)) return static_cast<const _Facet*>(__facets[__i])
+ DW_MACRO_undef_strp - lineno : 139 macro : _GLIBCXX_STD_FACET
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 34 macro : _GLIBXX_STREAMBUF 1
+ DW_MACRO_define_strp - lineno : 51 macro : _IsUnused __attribute__ ((__unused__))
+ DW_MACRO_undef_strp - lineno : 855 macro : _IsUnused
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 24 macro : _BITS_WCTYPE_WCHAR_H 1
+ DW_MACRO_define_strp - lineno : 49 macro : _ISwbit(bit) ((bit) < 8 ? (int) ((1UL << (bit)) << 24) : ((bit) < 16 ? (int) ((1UL << (bit)) << 8) : ((bit) < 24 ? (int) ((1UL << (bit)) >> 8) : (int) ((1UL << (bit)) >> 24))))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 73 macro : towlower
+ DW_MACRO_undef_strp - lineno : 74 macro : towupper
+ DW_MACRO_undef_strp - lineno : 75 macro : wctrans
+ DW_MACRO_undef_strp - lineno : 76 macro : wctype
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 55 macro : _GLIBCXX_NUM_FACETS 14
+ DW_MACRO_define_strp - lineno : 58 macro : _GLIBCXX_NUM_CXX11_FACETS (_GLIBCXX_USE_DUAL_ABI ? 8 : 0)
+ DW_MACRO_define_strp - lineno : 62 macro : _GLIBCXX_NUM_UNICODE_FACETS 4
+ DW_MACRO_define_strp - lineno : 69 macro : _GLIBCXX_NUM_LBDL_ALT128_FACETS (4 + (_GLIBCXX_USE_DUAL_ABI ? 2 : 0))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 30 macro : _GLIBCXX_FORMAT 1
+ DW_MACRO_define_strp - lineno : 36 macro : __glibcxx_want_format 
+ DW_MACRO_define_strp - lineno : 37 macro : __glibcxx_want_format_ranges 
+ DW_MACRO_define_strp - lineno : 38 macro : __glibcxx_want_format_uchar 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 48 macro : __glibcxx_want_array_constexpr 
+ DW_MACRO_define_strp - lineno : 49 macro : __glibcxx_want_freestanding_array 
+ DW_MACRO_define_strp - lineno : 50 macro : __glibcxx_want_nonmember_container_access 
+ DW_MACRO_define_strp - lineno : 51 macro : __glibcxx_want_to_array 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 30 macro : _GLIBCXX_CHARCONV 1
+ DW_MACRO_define_strp - lineno : 48 macro : __glibcxx_want_to_chars 
+ DW_MACRO_define_strp - lineno : 49 macro : __glibcxx_want_constexpr_charconv 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 356 macro : _GLIBCXX_TO_CHARS(T) _GLIBCXX23_CONSTEXPR inline to_chars_result to_chars(char* __first, char* __last, T __value, int __base = 10) { return std::__to_chars_i<T>(__first, __last, __value, __base); }
+ DW_MACRO_undef_strp - lineno : 387 macro : _GLIBCXX_TO_CHARS
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 2227 macro : __glibcxx_max
+ DW_MACRO_undef_strp - lineno : 2228 macro : __glibcxx_digits
+ DW_MACRO_undef_strp - lineno : 2229 macro : __glibcxx_digits10
+ DW_MACRO_undef_strp - lineno : 2230 macro : __glibcxx_max_digits10
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 54 macro : gmtime
+ DW_MACRO_undef_strp - lineno : 55 macro : localtime
+ DW_MACRO_undef_strp - lineno : 56 macro : strftime
+ DW_MACRO_undef_strp - lineno : 76 macro : timespec_get
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 21 macro : _LIBINTL_H 1
+ DW_MACRO_define_strp - lineno : 27 macro : __USE_GNU_GETTEXT 1
+ DW_MACRO_define_strp - lineno : 31 macro : __GNU_GETTEXT_SUPPORTED_REVISION(major) ((major) == 0 ? 1 : -1)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 31 macro : _GLIBCXX_OPTIONAL 1
+ DW_MACRO_define_strp - lineno : 35 macro : __glibcxx_want_freestanding_optional 
+ DW_MACRO_define_strp - lineno : 36 macro : __glibcxx_want_optional 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 35 macro : _GLIBCXX_SPAN 1
+ DW_MACRO_define_strp - lineno : 39 macro : __glibcxx_want_span 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 30 macro : _GLIBCXX_VARIANT 1
+ DW_MACRO_define_strp - lineno : 34 macro : __glibcxx_want_freestanding_variant 
+ DW_MACRO_define_strp - lineno : 35 macro : __glibcxx_want_variant 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 1802 macro : _GLIBCXX_VISIT_UNREACHABLE __builtin_unreachable
+ DW_MACRO_define_strp - lineno : 1805 macro : _GLIBCXX_VISIT_CASE(N) case N: { if constexpr (N < __n) { return __gen_vtable_impl<_Ma, index_sequence<N>>:: __visit_invoke(std::forward<_Visitor>(__visitor), std::forward<_V0>(__v0)); } else _GLIBCXX_VISIT_UNREACHABLE(); }
+ DW_MACRO_undef_strp - lineno : 1846 macro : _GLIBCXX_VISIT_CASE
+ DW_MACRO_undef_strp - lineno : 1847 macro : _GLIBCXX_VISIT_UNREACHABLE
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_undef_strp - lineno : 4 macro : __STDC_LIMIT_MACROS
+ DW_MACRO_define_strp - lineno : 5 macro : __STDC_LIMIT_MACROS 
+ DW_MACRO_undef_strp - lineno : 6 macro : __STDC_CONSTANT_MACROS
+ DW_MACRO_define_strp - lineno : 7 macro : __STDC_CONSTANT_MACROS 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 23 macro : _STDINT_H 1
+ DW_MACRO_define_strp - lineno : 25 macro : __GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 301 macro : SIG_ATOMIC_WIDTH 32
+ DW_MACRO_define_strp - lineno : 302 macro : SIZE_WIDTH __WORDSIZE
+ DW_MACRO_define_strp - lineno : 303 macro : WCHAR_WIDTH 32
+ DW_MACRO_define_strp - lineno : 304 macro : WINT_WIDTH 32
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_undef_strp - lineno : 1316 macro : _GLIBCXX_FORMAT_F128
+ DW_MACRO_define_strp - lineno : 1362 macro : _GLIBCXX_FORMAT_F128 2
+ DW_MACRO_define_strp - lineno : 2348 macro : _GLIBCXX_P2518R3 0
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 57 macro : _STL_UNINITIALIZED_H 1
+ DW_MACRO_define_strp - lineno : 99 macro : _GLIBCXX_USE_ASSIGN_FOR_INIT(T,U) __is_trivial(T) && __is_assignable(T&, U) && std::__check_constructible<T, U>()
+ DW_MACRO_undef_strp - lineno : 330 macro : _GLIBCXX_USE_ASSIGN_FOR_INIT
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 58 macro : ATOMIC_INT_LOCK_FREE __GCC_ATOMIC_INT_LOCK_FREE
+ DW_MACRO_define_strp - lineno : 59 macro : ATOMIC_LONG_LOCK_FREE __GCC_ATOMIC_LONG_LOCK_FREE
+ DW_MACRO_define_strp - lineno : 60 macro : ATOMIC_LLONG_LOCK_FREE __GCC_ATOMIC_LLONG_LOCK_FREE
+ DW_MACRO_define_strp - lineno : 61 macro : ATOMIC_POINTER_LOCK_FREE __GCC_ATOMIC_POINTER_LOCK_FREE
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 23 macro : _LIBC_LIMITS_H_ 1
+ DW_MACRO_define_strp - lineno : 25 macro : __GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 174 macro : LLONG_WIDTH 64
+ DW_MACRO_define_strp - lineno : 177 macro : ULLONG_WIDTH 64
+ DW_MACRO_define_strp - lineno : 186 macro : BOOL_MAX 1
+ DW_MACRO_define_strp - lineno : 189 macro : BOOL_WIDTH 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 146 macro : _POSIX_QLIMIT 1
+ DW_MACRO_define_strp - lineno : 150 macro : _POSIX_HIWAT _POSIX_PIPE_BUF
+ DW_MACRO_define_strp - lineno : 153 macro : _POSIX_UIO_MAXIOV 16
+ DW_MACRO_define_strp - lineno : 157 macro : _POSIX_CLOCKRES_MIN 20000000
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 25 macro : __undef_NR_OPEN 
+ DW_MACRO_define_strp - lineno : 28 macro : __undef_LINK_MAX 
+ DW_MACRO_define_strp - lineno : 31 macro : __undef_OPEN_MAX 
+ DW_MACRO_define_strp - lineno : 34 macro : __undef_ARG_MAX 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 15 macro : XATTR_NAME_MAX 255
+ DW_MACRO_define_strp - lineno : 16 macro : XATTR_SIZE_MAX 65536
+ DW_MACRO_define_strp - lineno : 17 macro : XATTR_LIST_MAX 65536
+ DW_MACRO_define_strp - lineno : 19 macro : RTSIG_MAX 32
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 90 macro : LOGIN_NAME_MAX 256
+ DW_MACRO_define_strp - lineno : 93 macro : HOST_NAME_MAX 64
+ DW_MACRO_define_strp - lineno : 96 macro : MQ_PRIO_MAX 32768
+ DW_MACRO_define_strp - lineno : 99 macro : SEM_VALUE_MAX (2147483647)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 78 macro : EXPR_NEST_MAX _POSIX2_EXPR_NEST_MAX
+ DW_MACRO_define_strp - lineno : 81 macro : LINE_MAX _POSIX2_LINE_MAX
+ DW_MACRO_define_strp - lineno : 84 macro : CHARCLASS_NAME_MAX 2048
+ DW_MACRO_define_strp - lineno : 88 macro : RE_DUP_MAX (0x7fff)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 30 macro : _XOPEN_LIM_H 1
+ DW_MACRO_define_strp - lineno : 62 macro : _XOPEN_IOV_MAX _POSIX_UIO_MAXIOV
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 20 macro : _BITS_UIO_LIM_H 1
+ DW_MACRO_define_strp - lineno : 30 macro : __IOV_MAX 1024
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 91 macro : NL_TEXTMAX INT_MAX
+ DW_MACRO_define_strp - lineno : 94 macro : NZERO 20
+ DW_MACRO_define_strp - lineno : 114 macro : WORD_BIT 32
+ DW_MACRO_define_strp - lineno : 137 macro : LONG_BIT 64
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 153 macro : LONG_LONG_MAX
+ DW_MACRO_define_strp - lineno : 154 macro : LONG_LONG_MAX __LONG_LONG_MAX__
+ DW_MACRO_undef_strp - lineno : 157 macro : ULONG_LONG_MAX
+ DW_MACRO_define_strp - lineno : 158 macro : ULONG_LONG_MAX (LONG_LONG_MAX * 2ULL + 1ULL)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 105 macro : _XOPEN_XPG4 1
+ DW_MACRO_define_strp - lineno : 108 macro : _XOPEN_UNIX 1
+ DW_MACRO_define_strp - lineno : 112 macro : _XOPEN_ENH_I18N 1
+ DW_MACRO_define_strp - lineno : 115 macro : _XOPEN_LEGACY 1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 187 macro : _POSIX_TRACE_EVENT_FILTER -1
+ DW_MACRO_define_strp - lineno : 188 macro : _POSIX_TRACE_INHERIT -1
+ DW_MACRO_define_strp - lineno : 189 macro : _POSIX_TRACE_LOG -1
+ DW_MACRO_define_strp - lineno : 192 macro : _POSIX_TYPED_MEMORY_OBJECTS -1
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 101 macro : __ILP32_OFFBIG_CFLAGS "-m32 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+ DW_MACRO_define_strp - lineno : 102 macro : __ILP32_OFFBIG_LDFLAGS "-m32"
+ DW_MACRO_define_strp - lineno : 104 macro : __LP64_OFF64_CFLAGS "-m64"
+ DW_MACRO_define_strp - lineno : 105 macro : __LP64_OFF64_LDFLAGS "-m64"
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 211 macro : STDOUT_FILENO 1
+ DW_MACRO_define_strp - lineno : 212 macro : STDERR_FILENO 2
+ DW_MACRO_define_strp - lineno : 224 macro : __need_size_t 
+ DW_MACRO_define_strp - lineno : 225 macro : __need_NULL 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 284 macro : F_OK 0
+ DW_MACRO_define_strp - lineno : 327 macro : L_SET SEEK_SET
+ DW_MACRO_define_strp - lineno : 328 macro : L_INCR SEEK_CUR
+ DW_MACRO_define_strp - lineno : 329 macro : L_XTND SEEK_END
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 673 macro : _CS_POSIX_V7_LPBIG_OFFBIG_LIBS _CS_POSIX_V7_LPBIG_OFFBIG_LIBS
+ DW_MACRO_define_strp - lineno : 675 macro : _CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS _CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS
+ DW_MACRO_define_strp - lineno : 678 macro : _CS_V6_ENV _CS_V6_ENV
+ DW_MACRO_define_strp - lineno : 680 macro : _CS_V7_ENV _CS_V7_ENV
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 1109 macro : F_LOCK 1
+ DW_MACRO_define_strp - lineno : 1110 macro : F_TLOCK 2
+ DW_MACRO_define_strp - lineno : 1111 macro : F_TEST 3
+ DW_MACRO_define_strp - lineno : 1134 macro : TEMP_FAILURE_RETRY(expression) (__extension__ ({ long int __result; do __result = (long int) (expression); while (__result == -1L && errno == EINTR); __result; }))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 3 macro : _LINUX_CLOSE_RANGE_H 
+ DW_MACRO_define_strp - lineno : 6 macro : CLOSE_RANGE_UNSHARE (1U << 1)
+ DW_MACRO_define_strp - lineno : 9 macro : CLOSE_RANGE_CLOEXEC (1U << 2)
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 3 macro : _ASM_X86_UNISTD_H 
+ DW_MACRO_define_strp - lineno : 13 macro : __X32_SYSCALL_BIT 0x40000000
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 373 macro : __NR_listmount 458
+ DW_MACRO_define_strp - lineno : 374 macro : __NR_lsm_get_self_attr 459
+ DW_MACRO_define_strp - lineno : 375 macro : __NR_lsm_set_self_attr 460
+ DW_MACRO_define_strp - lineno : 376 macro : __NR_lsm_list_modules 461
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 2567 macro : SYS_wait4 __NR_wait4
+ DW_MACRO_define_strp - lineno : 2571 macro : SYS_waitid __NR_waitid
+ DW_MACRO_define_strp - lineno : 2579 macro : SYS_write __NR_write
+ DW_MACRO_define_strp - lineno : 2583 macro : SYS_writev __NR_writev
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 163 macro : _GLIBCXX20_INIT(I) = I
+ DW_MACRO_define_strp - lineno : 169 macro : ATOMIC_VAR_INIT(_VI) { _VI }
+ DW_MACRO_define_strp - lineno : 207 macro : ATOMIC_FLAG_INIT { 0 }
+ DW_MACRO_undef_strp - lineno : 1478 macro : _GLIBCXX20_INIT
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 56 macro : _GLIBCXX_TSAN_MUTEX_PRE_UNLOCK(X) 
+ DW_MACRO_define_strp - lineno : 57 macro : _GLIBCXX_TSAN_MUTEX_POST_UNLOCK(X) 
+ DW_MACRO_define_strp - lineno : 58 macro : _GLIBCXX_TSAN_MUTEX_PRE_SIGNAL(X) 
+ DW_MACRO_define_strp - lineno : 59 macro : _GLIBCXX_TSAN_MUTEX_POST_SIGNAL(X) 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 111 macro : __glibcxx_want_shared_ptr_weak_type 
+ DW_MACRO_define_strp - lineno : 112 macro : __glibcxx_want_smart_ptr_for_overwrite 
+ DW_MACRO_define_strp - lineno : 113 macro : __glibcxx_want_to_address 
+ DW_MACRO_define_strp - lineno : 114 macro : __glibcxx_want_transparent_operators 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 74 macro : __glibcxx_want_nonmember_container_access 
+ DW_MACRO_define_strp - lineno : 75 macro : __glibcxx_want_null_iterators 
+ DW_MACRO_define_strp - lineno : 76 macro : __glibcxx_want_ranges 
+ DW_MACRO_define_strp - lineno : 77 macro : __glibcxx_want_ssize 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 64 macro : __glibcxx_want_ranges_slide 
+ DW_MACRO_define_strp - lineno : 65 macro : __glibcxx_want_ranges_stride 
+ DW_MACRO_define_strp - lineno : 66 macro : __glibcxx_want_ranges_to_container 
+ DW_MACRO_define_strp - lineno : 67 macro : __glibcxx_want_ranges_zip 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 288 macro : _GLIBCXX_ASAN_ANNOTATE_GROW(n) 
+ DW_MACRO_define_strp - lineno : 289 macro : _GLIBCXX_ASAN_ANNOTATE_GREW(n) 
+ DW_MACRO_define_strp - lineno : 290 macro : _GLIBCXX_ASAN_ANNOTATE_SHRINK(n) 
+ DW_MACRO_define_strp - lineno : 291 macro : _GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1257 macro : _GLIBCXX_ASAN_ANNOTATE_REINIT
+ DW_MACRO_undef_strp - lineno : 1258 macro : _GLIBCXX_ASAN_ANNOTATE_GROW
+ DW_MACRO_undef_strp - lineno : 1259 macro : _GLIBCXX_ASAN_ANNOTATE_GREW
+ DW_MACRO_undef_strp - lineno : 1260 macro : _GLIBCXX_ASAN_ANNOTATE_SHRINK
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_define_strp - lineno : 80 macro : __glibcxx_want_constexpr_vector 
+ DW_MACRO_define_strp - lineno : 81 macro : __glibcxx_want_erase_if 
+ DW_MACRO_define_strp - lineno : 82 macro : __glibcxx_want_incomplete_container_elements 
+ DW_MACRO_define_strp - lineno : 83 macro : __glibcxx_want_nonmember_container_access 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 1984 macro : __glibcxx_want_saturation_arithmetic
+ DW_MACRO_undef_strp - lineno : 1994 macro : __glibcxx_want_text_encoding
+ DW_MACRO_undef_strp - lineno : 2004 macro : __glibcxx_want_to_string
+ DW_MACRO_undef_strp - lineno : 2006 macro : __glibcxx_want_all
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 23 macro : _STRING_H 1
+ DW_MACRO_define_strp - lineno : 25 macro : __GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 31 macro : __need_size_t 
+ DW_MACRO_define_strp - lineno : 32 macro : __need_NULL 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 38 macro : __CORRECT_ISO_CPP_STRING_H_PROTO 
+ DW_MACRO_define_strp - lineno : 201 macro : strdupa(s) (__extension__ ({ const char *__old = (s); size_t __len = strlen (__old) + 1; char *__new = (char *) __builtin_alloca (__len); (char *) memcpy (__new, __old, __len); }))
+ DW_MACRO_define_strp - lineno : 211 macro : strndupa(s,n) (__extension__ ({ const char *__old = (s); size_t __len = strnlen (__old, (n)); char *__new = (char *) __builtin_alloca (__len + 1); __new[__len] = '\0'; (char *) memcpy (__new, __old, __len); }))
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+ DW_MACRO_define_strp - lineno : 19 macro : _STRINGS_H 1
+ DW_MACRO_define_strp - lineno : 22 macro : __need_size_t 
+
+Contents of the .debug_macro section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Version:                     5
+  Offset size:                 4
+
+--
+ DW_MACRO_undef_strp - lineno : 67 macro : strspn
+ DW_MACRO_undef_strp - lineno : 68 macro : strstr
+ DW_MACRO_undef_strp - lineno : 69 macro : strtok
+ DW_MACRO_undef_strp - lineno : 70 macro : strxfrm
+
+Raw dump of debug contents of section .debug_line (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  Offset:                      0
+  Length:                      11915
+  DWARF Version:               5
+  Address size (bytes):        8
+--
+  17	(indirect line string, offset: 0x27e): /usr/include/x86_64-linux-gnu/asm
+  18	(indirect line string, offset: 0x2a0): /usr/include/asm-generic
+
+ The File Name Table (offset 0x75, lines 287, columns 2):
+  Entry	Dir	Name
+  0	1	(indirect line string, offset: 0x2b9): file.cpp
+  1	2	(indirect line string, offset: 0x2c2): new
+  2	2	(indirect line string, offset: 0x2c6): type_traits
+  3	3	(indirect line string, offset: 0x2d2): char_traits.h
+  4	4	(indirect line string, offset: 0x2e0): c++config.h
+  5	3	(indirect line string, offset: 0x2ec): basic_string.h
+--
+  12	3	(indirect line string, offset: 0x347): stl_iterator_base_types.h
+  13	3	(indirect line string, offset: 0x361): stl_iterator_base_funcs.h
+  14	3	(indirect line string, offset: 0x37b): alloc_traits.h
+  15	3	(indirect line string, offset: 0x38a): stl_construct.h
+  16	3	(indirect line string, offset: 0x39a): stl_vector.h
+  17	1	(indirect line string, offset: 0x3a7): file.cpp
+  18	2	(indirect line string, offset: 0x3b0): array
+  19	5	(indirect line string, offset: 0x3b6): alloc_traits.h
+  20	3	(indirect line string, offset: 0x3c5): unique_ptr.h
+  21	2	(indirect line string, offset: 0x3d2): tuple
+  22	3	(indirect line string, offset: 0x3d8): stl_algobase.h
+--
+  [0x00002e89]  Special opcode 47: advance Address by 3 to 0x43 and Line by 0 to 97
+  [0x00002e8a]  Advance PC by 6 to 0x49
+  [0x00002e8c]  Extended opcode 1: End of Sequence
+
+
+Contents of the .debug_str section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  0x00000000 5f5a4e4b 53743137 62617369 635f7374 _ZNKSt17basic_st
+  0x00000010 72696e67 5f766965 77496353 74313163 ring_viewIcSt11c
+  0x00000020 6861725f 74726169 74734963 45453466 har_traitsIcEE4f
+  0x00000030 696e6445 53325f6d 005f4953 4f433935 indES2_m._ISOC95
+--
+  0x000343e0 6861725f 74726169 74733c63 6861723e har_traits<char>
+  0x000343f0 2c207374 643a3a61 6c6c6f63 61746f72 , std::allocator
+  0x00034400 3c636861 723e203e 203e203e 005f474c <char> > > >._GL
+  0x00034410 49424358 585f4353 54444445 46203100 IBCXX_CSTDDEF 1.
+
+Contents of the .debug_line_str section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+  0x00000000 2f686f6d 652f6d61 6b2f5072 6f6a6563 /home/mak/Projec
+  0x00000010 74732f41 53545f54 7265655f 416e616c ts/AST_Tree_Anal
+  0x00000020 79736572 2f627569 6c642f73 7263002f yser/build/src./
+  0x00000030 686f6d65 2f6d616b 2f50726f 6a656374 home/mak/Project
+  0x00000040 732f4153 545f5472 65655f41 6e616c79 s/AST_Tree_Analy
+  0x00000050 7365722f 7372632f 66696c65 2e637070 ser/src/file.cpp
+  0x00000060 002f686f 6d652f6d 616b2f50 726f6a65 ./home/mak/Proje
+  0x00000070 6374732f 4153545f 54726565 5f416e61 cts/AST_Tree_Ana
+  0x00000080 6c797365 722f6275 696c642f 73726300 lyser/build/src.
+  0x00000090 2f686f6d 652f6d61 6b2f5072 6f6a6563 /home/mak/Projec
+  0x000000a0 74732f41 53545f54 7265655f 416e616c ts/AST_Tree_Anal
+--
+  0x00000350 746f725f 62617365 5f747970 65732e68 tor_base_types.h
+  0x00000360 0073746c 5f697465 7261746f 725f6261 .stl_iterator_ba
+  0x00000370 73655f66 756e6373 2e680061 6c6c6f63 se_funcs.h.alloc
+  0x00000380 5f747261 6974732e 68007374 6c5f636f _traits.h.stl_co
+  0x00000390 6e737472 7563742e 68007374 6c5f7665 nstruct.h.stl_ve
+  0x000003a0 63746f72 2e680066 696c652e 63707000 ctor.h.file.cpp.
+  0x000003b0 61727261 7900616c 6c6f635f 74726169 array.alloc_trai
+  0x000003c0 74732e68 00756e69 7175655f 7074722e ts.h.unique_ptr.
+  0x000003d0 68007475 706c6500 73746c5f 616c676f h.tuple.stl_algo
+  0x000003e0 62617365 2e680073 746c5f69 74657261 base.h.stl_itera
+  0x000003f0 746f722e 68007665 63746f72 2e746363 tor.h.vector.tcc
+--
+  0x000010a0 65616d5f 69746572 61746f72 2e680065 eam_iterator.h.e
+  0x000010b0 6c656d65 6e74735f 6f662e68 00766563 lements_of.h.vec
+  0x000010c0 746f7200 73746c5f 62766563 746f722e tor.stl_bvector.
+  0x000010d0 68007374 72696e67 732e6800          h.strings.h.
+
+Contents of the .eh_frame section (loaded from src/CMakeFiles/file.dir/file.cpp.o):
+
+
+00000000 0000000000000014 00000000 CIE
+  Version:               1
+  Augmentation:          "zR"

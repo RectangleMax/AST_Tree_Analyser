@@ -1,0 +1,100 @@
+cmake_minimum_required(VERSION 3.25)
+project(analyser VERSION 1.0.0 LANGUAGES CXX)
+
+# ЖЕСТКО указываем флаги отладки
+set(CMAKE_CXX_FLAGS "-g3 -ggdb -O0 -fno-omit-frame-pointer -fno-inline")
+set(CMAKE_CXX_FLAGS_DEBUG "")
+set(CMAKE_CXX_FLAGS_RELEASE "")
+
+# Настройка стандарта C++
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Принудительно устанавливаем Debug режим
+set(CMAKE_BUILD_TYPE Debug CACHE STRING "Choose the type of build" FORCE)
+
+# Глобальные флаги отладки
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g3 -ggdb -O0 -fno-omit-frame-pointer")
+
+# Вывод информации для отладки
+message(STATUS "CXX compiler: ${CMAKE_CXX_COMPILER}")
+message(STATUS "CXX flags: ${CMAKE_CXX_FLAGS}")
+message(STATUS "CXX debug flags: ${CMAKE_CXX_FLAGS_DEBUG}")
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+message(STATUS "Source dir: ${CMAKE_SOURCE_DIR}")
+message(STATUS "Binary dir: ${CMAKE_BINARY_DIR}")
+
+# Configure local githooks
+execute_process(
+    COMMAND git config core.hooksPath .githooks
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    RESULT_VARIABLE GIT_COMMAND_RESULT
+)
+if(NOT GIT_COMMAND_RESULT EQUAL 0)
+    message(WARNING "Failed to configure git hooks")
+endif()
+
+# Поиск зависимостей
+find_package(GTest REQUIRED)
+find_package(Boost REQUIRED COMPONENTS program_options)
+
+# Ручной поиск range-v3
+find_path(RANGE_V3_INCLUDE_DIR
+    NAMES range/v3/all.hpp
+    PATHS /usr/include
+          /usr/local/include
+)
+
+if(RANGE_V3_INCLUDE_DIR)
+    message(STATUS "Found range-v3: ${RANGE_V3_INCLUDE_DIR}")
+    add_library(range-v3 INTERFACE)
+    target_include_directories(range-v3 INTERFACE ${RANGE_V3_INCLUDE_DIR})
+else()
+    message(FATAL_ERROR "range-v3 not found!")
+endif()
+
+# УДАЛЕНО: глобальные include_directories()
+# include_directories(
+#     ${CMAKE_SOURCE_DIR}/include
+# )
+
+# Добавляем поддиректорию src
+add_subdirectory(src)
+
+# Основной исполняемый файл
+set(target analyser)
+
+add_executable(${target} main.cpp)
+
+# Директории включения для основного target
+target_include_directories(${target} PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/src
+)
+
+# Флаги компиляции для основного target
+target_compile_options(${target} PRIVATE 
+    -g3 -ggdb -O0 -fno-omit-frame-pointer
+)
+
+# Связывание библиотек
+target_link_libraries(${target} 
+    PRIVATE
+        metric_accumulator
+        metric
+        cmd_options
+        file
+        range-v3
+        Boost::program_options
+)
+
+# Настройка тестов
+include(CTest)
+enable_testing()
+
+# Добавляем цель для полной очистки
+add_custom_target(clean-all
+    COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}
+    COMMENT "Removing entire build directory"
+)

@@ -15,49 +15,43 @@ endforeach()
 # Цель для unit тестов
 add_custom_target(unit_tests)
 
+# Функция для удобного добавления библиотек с отладкой
+function(add_analyser_library name)
+    add_library(${name} ${ARGN})
+    
+    # Подробные флаги отладки
+    target_compile_options(${name} PRIVATE 
+        -g3 -ggdb -O0 -fno-omit-frame-pointer
+    )
+    
+    # Директории включения
+    target_include_directories(${name} PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_SOURCE_DIR}/include
+    )
+    
+    # Вывод информации о библиотеке
+    message(STATUS "Added library: ${name}")
+    get_target_property(src_files ${name} SOURCES)
+    message(STATUS "  Sources: ${src_files}")
+endfunction()
+
 # Библиотека function
-add_library(function
+add_analyser_library(function
     function.cpp
 )
 
-target_compile_options(function PRIVATE 
-    -g3 -ggdb -O0 -fno-omit-frame-pointer
-)
-
-target_include_directories(function PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_SOURCE_DIR}/include
-)
-
 # Библиотека file
-add_library(file
+add_analyser_library(file
     file.cpp
 )
 
-target_compile_options(file PRIVATE 
-    -g3 -ggdb -O0 -fno-omit-frame-pointer
-)
-
-target_include_directories(file PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_SOURCE_DIR}/include
-)
-
 # Библиотека metric
-add_library(metric
+add_analyser_library(metric
     metric.cpp
     metric_impl/code_lines_count.cpp
     metric_impl/cyclomatic_complexity.cpp
     metric_impl/parameters_count.cpp
-)
-
-target_compile_options(metric PRIVATE 
-    -g3 -ggdb -O0 -fno-omit-frame-pointer
-)
-
-target_include_directories(metric PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_SOURCE_DIR}/include
 )
 
 target_link_libraries(metric
@@ -66,19 +60,10 @@ target_link_libraries(metric
 )
 
 # Библиотека metric_accumulator
-add_library(metric_accumulator
+add_analyser_library(metric_accumulator
     metric_accumulator.cpp
     metric_accumulator_impl/average_accumulator.cpp
     metric_accumulator_impl/sum_average_accumulator.cpp
-)
-
-target_compile_options(metric_accumulator PRIVATE 
-    -g3 -ggdb -O0 -fno-omit-frame-pointer
-)
-
-target_include_directories(metric_accumulator PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_SOURCE_DIR}/include
 )
 
 target_link_libraries(metric_accumulator
@@ -89,17 +74,8 @@ target_link_libraries(metric_accumulator
 )
 
 # Библиотека cmd_options
-add_library(cmd_options
+add_analyser_library(cmd_options
     cmd_options.cpp
-)
-
-target_compile_options(cmd_options PRIVATE 
-    -g3 -ggdb -O0 -fno-omit-frame-pointer
-)
-
-target_include_directories(cmd_options PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_SOURCE_DIR}/include
 )
 
 target_link_libraries(cmd_options

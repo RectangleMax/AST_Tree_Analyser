@@ -11,9 +11,7 @@
             "program": "${workspaceFolder}/build/Analyser",
             "args": [
                 "-i",
-                "input.txt",
-                "--command",
-                "checksum"
+                "./files/sample.py"
             ],
             "cwd": "${workspaceFolder}/build"
         }
