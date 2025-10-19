@@ -1,20 +1,26 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "lldb",
+            "name": "C++ Debug",
+            "type": "cppdbg",
             "request": "launch",
-            "name": "Launch Analyser",
-            "program": "${workspaceFolder}/build/Analyser",
-            "args": [
-                "-i",
-                "./files/sample.py"
+            "program": "${workspaceFolder}/build/analyser",
+            "args": ["--file", "./files/sample.py"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
             ],
-            "cwd": "${workspaceFolder}/build"
+            // "preLaunchTask": "build",
+            // "miDebuggerPath": "/usr/bin/gdb"
         }
-
     ]
 }
