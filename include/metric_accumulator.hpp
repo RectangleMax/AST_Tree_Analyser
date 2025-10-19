@@ -30,6 +30,7 @@ struct IAccumulator {
     virtual void Reset() = 0;
     virtual ~IAccumulator() = default;
 
+    bool IsFinalized() const { return is_finalized; }
 protected:
     bool is_finalized = false;
 };
@@ -37,16 +38,36 @@ protected:
 struct MetricsAccumulator {
     template <typename Accumulator>
     void RegisterAccumulator(const std::string& metric_name, std::unique_ptr<Accumulator> acc) {
-        // здесь ваш код
+        accumulators[metric_name] = std::move(acc);
     }
+
     template <typename Accumulator>
     const Accumulator& GetFinalizedAccumulator(const std::string& metric_name) const {
-        // здесь ваш код
+        auto it = accumulators.find(metric_name);
+        if (it == accumulators.end()) {
+            throw std::runtime_error("Accumulator for metric " + metric_name + " not found");
+        }
+        
+        auto* accumulator = dynamic_cast<Accumulator*>(it->second.get());
+        if (!accumulator) {
+            throw std::runtime_error("Invalid accumulator type for metric " + metric_name);
+        }
+        
+        if (!accumulator->IsFinalized()) {
+            throw std::runtime_error("Accumulator for metric " + metric_name + " not finalized");
+        }
+        
+        return *accumulator;
     }
-    void AccumulateNextFunctionResults(
-        const std::vector<metric::MetricResult>& metric_results) const;
+
+    void AccumulateNextFunctionResults(const std::vector<metric::MetricResult>& metric_results) const;
 
     void ResetAccumulators();
+
+    // Добавлен публичный метод для доступа к аккумуляторам
+    auto GetAccumulatorsView() const {
+        return accumulators | rv::values;
+    }
 
 private:
     std::unordered_map<std::string, std::shared_ptr<IAccumulator>> accumulators;
